@@ -8,8 +8,8 @@ import 'package:fe_grab_mobile/module/object/services.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SignInPage extends StatelessWidget {
-  const SignInPage({super.key});
+class UnLoginPage extends StatelessWidget {
+  const UnLoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class _SignInFormState extends State<SignInForm> {
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
-    print(screenHeight);
+    // print(screenHeight);
     return Column(
       children: [
         Expanded(
@@ -259,7 +259,9 @@ class _SignInFormState extends State<SignInForm> {
                       RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(32.0),
                   ))),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, "/mid-signup");
+              },
               child: Text("Đăng ký",
                   style: GoogleFonts.inter(
                       fontWeight: FontWeight.w500,
@@ -278,7 +280,9 @@ class _SignInFormState extends State<SignInForm> {
                       RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(32.0),
               ))),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, "/login");
+              },
               child: Text("Đăng nhập",
                   style: GoogleFonts.inter(
                       fontWeight: FontWeight.w500,

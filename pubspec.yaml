@@ -72,6 +72,9 @@ flutter:
     - assets/images/mart.png
     - assets/images/3gift.png
     - assets/images/offer.png
+    - assets/images/g33.png
+    - assets/images/background_login.png
+
   # An image asset can erefer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

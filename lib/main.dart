@@ -1,6 +1,8 @@
 // ignore_for_file: depend_on_referenced_packages, prefer_const_constructors, must_be_immutable
 
-import 'package:fe_grab_mobile/module/signin/signin.dart';
+import 'package:fe_grab_mobile/module/signin/login_page.dart';
+import 'package:fe_grab_mobile/module/signin/unlogin_page.dart';
+import 'package:fe_grab_mobile/module/signup/signup_mid.dart';
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 
@@ -32,9 +34,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: primeColor,
       ),
-      initialRoute: "/sign-in",
+      initialRoute: "/unlogin",
       routes: <String, WidgetBuilder>{
-        "/sign-in": (context) => const SignInPage(),
+        "/unlogin": (context) => const UnLoginPage(),
+        "/login": (context) => const SignInPage(),
+        "/mid-signup": (context) => const SignUpMidPage(),
       },
     );
   }
