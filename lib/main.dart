@@ -6,6 +6,8 @@ import 'package:fe_grab_mobile/module/signup/signup_mid.dart';
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 
+import 'module/home/homepage.dart';
+
 void main() {
   runApp(DevicePreview(enabled: true, builder: ((context) => MyApp())));
   //runApp(MyApp());
@@ -39,6 +41,7 @@ class MyApp extends StatelessWidget {
         "/unlogin": (context) => const UnLoginPage(),
         "/login": (context) => const SignInPage(),
         "/mid-signup": (context) => const SignUpMidPage(),
+        "/home": (context) => const HomePage(),
       },
     );
   }

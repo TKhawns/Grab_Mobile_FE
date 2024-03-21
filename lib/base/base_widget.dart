@@ -5,22 +5,16 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 
-import 'package:google_fonts/google_fonts.dart';
-
 class PageContainer extends StatelessWidget {
-  final String title;
   final Widget child;
 
   final List<SingleChildWidget> bloc;
   final List<SingleChildWidget> di;
-  //final List<Widget> actions;
 
   PageContainer({
-    required this.title,
     required this.child,
     required this.bloc,
     required this.di,
-    //required this.actions,
   });
 
   @override
@@ -32,14 +26,18 @@ class PageContainer extends StatelessWidget {
         ...bloc,
       ],
       child: Scaffold(
+        backgroundColor: Color(0xFF58BC6B),
         appBar: AppBar(
-          centerTitle: true,
-          title: Text(title,
-              style: GoogleFonts.inter(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w500,
-                  fontSize: 25)),
-        ),
+            elevation: 0,
+            leading: IconButton(
+              icon: Icon(
+                Icons.arrow_back,
+                color: Colors.white,
+              ),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            )),
         body: child,
       ),
     );
