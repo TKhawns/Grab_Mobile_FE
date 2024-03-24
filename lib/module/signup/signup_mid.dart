@@ -137,7 +137,9 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => SignUpPage()),
+                MaterialPageRoute(
+                    builder: (context) =>
+                        SignUpPage(name: _txtNameController.text)),
               );
             },
             style: ElevatedButton.styleFrom(

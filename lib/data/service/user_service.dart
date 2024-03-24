@@ -18,7 +18,7 @@ class UserService {
     return BookClient.instance.dio.post(
       '/user/sign-up',
       data: {
-        'displayName': displayName,
+        'full_name': displayName,
         'phone': phone,
         'password': pass,
       },

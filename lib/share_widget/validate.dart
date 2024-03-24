@@ -8,7 +8,7 @@ class Validation {
     return pass.length >= 6;
   }
 
-  static isDisplayNameValid(String displayName) {
-    return displayName.length > 5;
-  }
+  // static isDisplayNameValid(String displayName) {
+  //   return displayName.length > 5;
+  // }
 }

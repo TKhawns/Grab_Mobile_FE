@@ -1,8 +1,6 @@
 // ignore_for_file: depend_on_referenced_packages
 
 import 'dart:ui';
-
-import 'package:fe_grab_mobile/base/base_widget.dart';
 import 'package:fe_grab_mobile/module/object/food_option.dart';
 import 'package:fe_grab_mobile/module/object/services.dart';
 import 'package:flutter/material.dart';
