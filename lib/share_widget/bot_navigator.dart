@@ -1,6 +1,7 @@
 // ignore_for_file: depend_on_referenced_packages, no_leading_underscores_for_local_identifiers
 
 import 'package:fe_grab_mobile/module/home/homepage.dart';
+import 'package:fe_grab_mobile/module/activity/activity_page.dart';
 import 'package:fe_grab_mobile/module/message/message_page.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
@@ -14,52 +15,52 @@ class BottomNavigatorBar extends StatelessWidget {
     List<Widget> _buildScreens() {
       return [
         const HomePage(),
-        const MessagePage(),
-        const MessagePage(),
-        const MessagePage(),
-        const MessagePage(),
+        const ActivityPage(),
+        const ActivityPage(),
+        MessagePage(),
+        const ActivityPage(),
       ];
     }
 
     List<PersistentBottomNavBarItem> _navBarsItems() {
       return [
         PersistentBottomNavBarItem(
-          iconSize: 25,
-          textStyle: GoogleFonts.inter(fontSize: 12),
+          iconSize: 24,
+          textStyle: GoogleFonts.inter(fontSize: 11),
           icon: const Icon(Icons.home),
           title: ("Trang chủ"),
           activeColorPrimary: Colors.green,
           inactiveColorPrimary: Colors.grey,
         ),
         PersistentBottomNavBarItem(
-          iconSize: 25,
-          textStyle: GoogleFonts.inter(fontSize: 12),
-          icon: const Icon(Icons.home),
-          title: ("Trang chủ"),
+          iconSize: 24,
+          textStyle: GoogleFonts.inter(fontSize: 11),
+          icon: const Icon(Icons.feed),
+          title: ("Hoạt động"),
           activeColorPrimary: Colors.green,
           inactiveColorPrimary: Colors.grey,
         ),
         PersistentBottomNavBarItem(
-          iconSize: 25,
-          textStyle: GoogleFonts.inter(fontSize: 12),
-          icon: const Icon(Icons.home),
-          title: ("Trang chủ"),
+          iconSize: 24,
+          textStyle: GoogleFonts.inter(fontSize: 11),
+          icon: const Icon(Icons.account_balance_wallet_outlined),
+          title: ("Thanh toán"),
           activeColorPrimary: Colors.green,
           inactiveColorPrimary: Colors.grey,
         ),
         PersistentBottomNavBarItem(
-          iconSize: 25,
-          textStyle: GoogleFonts.inter(fontSize: 12),
-          icon: const Icon(Icons.home),
-          title: ("Trang chủ"),
+          iconSize: 24,
+          textStyle: GoogleFonts.inter(fontSize: 11),
+          icon: const Icon(Icons.message_outlined),
+          title: ("Tin nhắn"),
           activeColorPrimary: Colors.green,
           inactiveColorPrimary: Colors.grey,
         ),
         PersistentBottomNavBarItem(
-          iconSize: 26,
-          textStyle: GoogleFonts.inter(fontSize: 12),
-          icon: const Icon(Icons.home),
-          title: ("Trang chủ"),
+          iconSize: 24,
+          textStyle: GoogleFonts.inter(fontSize: 11),
+          icon: const Icon(Icons.account_circle_rounded),
+          title: ("Tài khoản"),
           activeColorPrimary: Colors.green,
           inactiveColorPrimary: Colors.grey,
         ),
@@ -102,6 +103,5 @@ class BottomNavigatorBar extends StatelessWidget {
       navBarStyle:
           NavBarStyle.style6, // Choose the nav bar style with this property.
     );
-    ;
   }
 }
