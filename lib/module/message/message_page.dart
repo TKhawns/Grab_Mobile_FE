@@ -172,6 +172,7 @@ class MessagePage extends StatelessWidget {
     for (var i = 0; i < messages.length; i++) {
       list.add(buildMessage(messages[i], i, messages.length));
     }
+
     return list;
   }
 

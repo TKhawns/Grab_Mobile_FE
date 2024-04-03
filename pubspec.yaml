@@ -88,6 +88,9 @@ flutter:
     - assets/images/grab_pay.png
     - assets/images/don0d.png
     - assets/images/no_activity.png
+    - assets/images/moca_wallet.png
+    - assets/images/thanhtoanhoadon.png
+    - assets/images/naptiendt.png
 
   # An image asset can erefer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
